@@ -48,24 +48,7 @@ main_menu:
       url: "/contact/contact-4"
   submenu: []
 - text: Khoá học
-  url: "/portfolios/"
-  submenu:
-  - text: Portfolio 01
-    url: "/portfolios/index"
-  - text: Portfolio 02
-    url: "/portfolios/index-2"
-  - text: Portfolio 03
-    url: "/portfolios/index-3"
-  - text: Portfolio 04
-    url: "/portfolios/index-4"
-  - text: Portfolio 05
-    url: "/portfolios/index-5"
-  - text: Portfolio 06
-    url: "/portfolios/index-6"
-  - text: Portfolio 07
-    url: "/portfolios/index-7"
-  - text: Portfolio 08
-    url: "/portfolios/index-8"
+  url: "/portfolios/index-2"
 - text: Đăng ký
   url: "/"
   has_submenu: 'false'
