@@ -5,11 +5,12 @@ custom_css: purple
 custom_font: font2
 hero_area:
   enable: true
-  title: "Chào mừng bạn đến với data4vn!"
-  sub_title: "Một chương trình đào tạo data science bài bản dành cho tất cả mọi người."
+  title: "Simple, Powerful and Lightweight"
+  sub_title: "Free & secure messaging app available in multiplatform."
   big_image: "/assets/images/art/macbook2.png"
-  btn_text: "How It Works"
-  btn_url: "#"
+  small_image: "/assets/images/art/iphone4.png"
+  video_url: "https://vimeo.com/124071444"
+  button_text: "How It Works"
 three_columns_area:
   enable: true
   title: What We Do?
@@ -250,16 +251,22 @@ faq_area:
                             {{page.hero_area.sub_title}}
                         </div>
                         <!-- /.tp-caption -->
-                        {% endif %} {% if page.hero_area.enable %}
-                        <a class="tp-caption btn btn-l btn-white btn-strong-hover scroll" 
-                             data-x="center" 
-                             data-y="middle" 
-                             data-voffset="['85','85','85','85']" 
-                             data-width="['auto','auto','auto','auto']" 
-                             data-textAlign="['center','center','center','center']" 
-                             data-frames='[{"delay":1500,"speed":1500,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.7;sY:0.7;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' 
-                             data-responsive="on" 
-                             data-responsive_offset="on" style="z-index: 9;" href="{{page.hero_area.btn_url}}"> {{page.hero_area.btn_text}}
+                        {% endif %} {% if page.hero_area.video_url %}
+                        <a
+                            class="tp-caption btn btn-l btn-white btn-strong-hover scroll"
+                            data-x="['left','left','center','center']"
+                            data-y="middle"
+                            data-hoffset="['50','30','0','0']"
+                            data-voffset="['125','125','-130','0']"
+                            data-width="['auto','auto','auto','auto']"
+                            data-textAlign="['left','left','center','center']"
+                            data-frames='[{"delay":2500,"speed":1200,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-responsive="on"
+                            data-responsive_offset="on"
+                            style="z-index: 9;"
+                            href="{{page.hero_area.video_url}}"
+                        >
+                            <span class="btn-play btn-play-s"></span><span class="h6 pl-10 font-weight-600">{{page.hero_area.button_text}}</span>
                         </a>
                         <!-- /.tp-caption -->
                         {% endif %} 
@@ -268,8 +275,8 @@ faq_area:
                             class="tp-caption"
                             data-x="['right','right','center','center']"
                             data-y="middle"
-                            data-hoffset="['70','40','125','50']"
-                            data-voffset="['110','110','220','250']"
+                            data-hoffset="['60','30','0','0']"
+                            data-voffset="['30','30','160','205']"
                             data-frames='[{"delay":500,"speed":1200,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
                             data-visibility="['on','on','on','on']"
                             data-width="none"
@@ -278,10 +285,29 @@ faq_area:
                             data-responsive_offset="on"
                             style="z-index: 5;"
                         >
-                            <img data-lazyload="" src="{{page.hero_area.big_image}}" data-ww="['740','650','550','400']" data-hh="auto" alt="" />
+                            <img data-lazyload="" src="{{page.hero_area.big_image}}" data-ww="['740','650','550','400']" data-hh="['422','388','314','228']" alt="" />
                         </div>
                         <!-- /.tp-caption -->
                         {% endif %} 
+                        {% if page.hero_area.small_image %}
+                        <div
+                            class="tp-caption"
+                            data-x="['right','right','right','right']"
+                            data-y="middle"
+                            data-hoffset="['70','40','125','50']"
+                            data-voffset="['110','110','220','250']"
+                            data-frames='[{"delay":1000,"speed":1200,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                            data-visibility="['on','on','on','on']"
+                            data-width="none"
+                            data-height="none"
+                            data-type="image"
+                            data-responsive_offset="on"
+                            style="z-index: 5;"
+                        >
+                            <img data-lazyload="" src="{{page.hero_area.small_image}}" data-ww="['128','120','100','74']" data-hh="['242','227','190','140']" alt="hero" />
+                        </div>
+                        <!-- /.tp-caption -->
+                        {% endif %}
                     </li>
                 </ul>
                 <div class="tp-bannertimer tp-bottom"></div>
