@@ -8,8 +8,8 @@ hero_area:
   title: "Chào mừng bạn đến với data4vn!"
   sub_title: "Một chương trình đào tạo data science bài bản dành cho tất cả mọi người."
   big_image: "/assets/images/art/macbook2.png"
-  button_text: "How It Works"
-  button_url: "#"
+  btn_text: "How It Works"
+  btn_url: "#"
 three_columns_area:
   enable: true
   title: What We Do?
@@ -250,22 +250,16 @@ faq_area:
                             {{page.hero_area.sub_title}}
                         </div>
                         <!-- /.tp-caption -->
-                        {% endif %} {% if page.hero_area.video_url %}
-                        <a
-                            class="tp-caption btn-play-wrapper lightbox"
-                            data-x="['left','left','center','center']"
-                            data-y="middle"
-                            data-hoffset="['50','30','0','0']"
-                            data-voffset="['125','125','-130','0']"
-                            data-width="['auto','auto','auto','auto']"
-                            data-textAlign="['left','left','center','center']"
-                            data-frames='[{"delay":2500,"speed":1200,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                            data-responsive="on"
-                            data-responsive_offset="on"
-                            style="z-index: 9;"
-                            href="{{page.hero_area.video_url}}"
-                        >
-                            <span class="btn-play btn-play-s"></span><span class="h6 pl-10 font-weight-600">{{page.hero_area.button_text}}</span>
+                        {% endif %} {% if page.hero_area.enable %}
+                        <a class="tp-caption btn btn-l btn-white btn-strong-hover scroll" 
+                             data-x="center" 
+                             data-y="middle" 
+                             data-voffset="['85','85','85','85']" 
+                             data-width="['auto','auto','auto','auto']" 
+                             data-textAlign="['center','center','center','center']" 
+                             data-frames='[{"delay":1500,"speed":1500,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.7;sY:0.7;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' 
+                             data-responsive="on" 
+                             data-responsive_offset="on" style="z-index: 9;" href="{{page.hero_area.btn_url}}"> {{page.hero_area.btn_text}}
                         </a>
                         <!-- /.tp-caption -->
                         {% endif %} 
