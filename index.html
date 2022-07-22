@@ -454,6 +454,33 @@ faq_area:
   </div>
   </div>
   {% endif %}
+  {% if page.progress_area.enable %}
+  <div class="wrapper light-wrapper">
+    <div class="container inner">
+      <div class="row align-items-center text-center text-lg-left">
+        <div class="col-lg-6">
+          <h2 class="title-color color-gray">{{page.progress_area.title}}</h2>
+          <h3 class="display-3">{{page.progress_area.sub_title}}</h3>
+        </div>
+        <!--/column -->
+        <div class="space20 d-md-none"></div>
+        <div class="space50 d-none d-md-block d-lg-none"></div>
+        <div class="col-lg-6">
+          <div class="row text-center">
+            {% for list in page.progress_area.lists %}
+            <div class="col-md-6">
+              <div class="progressbar circle pink" data-value="{{list.numbers}}"></div>
+              <h5>{{list.title}}</h5>
+              <p>{{list.description}}</p>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.wrapper -->
+  {% endif %}
   {% if page.portfolios_area.enable %}
   <div class="wrapper white-wrapper" id="portfolio">
     <div class="container inner">
@@ -493,6 +520,10 @@ faq_area:
       </div>
       {% endif %}
     </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.wrapper -->
+  {% endif %}
     {% if page.testimonials_area.enable %}
     <div class="wrapper white-wrapper inner">
       <div class="container">
