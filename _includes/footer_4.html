@@ -1,3 +1,6 @@
+---
+
+---
 <footer class="image-wrapper bg-image page-title-wrapper inverse-text" data-image-src="/assets/images/art/bg4.jpg">
   <div class="divider"><svg xmlns="http://www.w3.org/2000/svg" class="fill-light-wrapper position-absolute" preserveAspectRatio="none" viewBox="0 0 1070 52">
  <path d="M0,0S247,91,505,32c261.17-59.72,565-13,565-13V0Z" /></svg></div>
@@ -30,21 +33,7 @@
         </div>
         <!-- /.widget -->
       </div>
-      <!-- /column -->
-      <div class="col-md-4 col-lg-3">
-        {% assign external_links = site.data.general_settings.external_links %}
-        <div class="widget">
-          {% if external_links.title %}
-           <h5 class="widget-title">{{external_links.title}}</h5>
-          {% endif %}
-          <ul class="list-unstyled mb-0">
-            {% for links in external_links.links %}
-            <li><a href="{{libks.url}}">{{links.text}}</a></li>
-            {% endfor %}
-          </ul>
-        </div>
-        <!-- /.widget -->
-      </div>
+      
       <!-- /column -->
       <div class="space30 d-none d-md-block d-lg-none"></div>
       <div class="col-md-12 col-lg-3">
