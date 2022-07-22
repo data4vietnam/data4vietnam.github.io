@@ -5,50 +5,10 @@ main_menu:
   menu_type: 'simple'
 - text: Phương pháp học
   url: "/"
-  menu_type: ''
-  has_submenu: 'true'
-  label_two:
-  - sub_menu_text: Services
-    sub_menu:
-    - text: Service 01
-      url: "/services/index"
-    - text: Service 02
-      url: "/services/index-2"
-    - text: Service 03
-      url: "/services/index-3"
-    - text: Service 04
-      url: "/services/index-4"
-    - text: Service 05
-      url: "/services/index-5"
-  - sub_menu_text: About Us
-    sub_menu:
-    - text: About 01
-      url: "/about/about"
-    - text: About 02
-      url: "/about/about-2"
-    - text: About 03
-      url: "/about/about-3"
-    - text: About 04
-      url: "/about/about-4"
-  - sub_menu_text: Shop
-    sub_menu:
-    - text: Shop 01
-      url: "/shop/index"
-    - text: Shop 02
-      url: "/shop/index-2"
-  - sub_menu_text: Contact
-    sub_menu:
-    - text: Contact 01
-      url: "/contact/contact-1"
-    - text: Contact 02
-      url: "/contact/contact-2"
-    - text: Contact 03
-      url: "/contact/contact-3"
-    - text: Contact 04
-      url: "/contact/contact-4"
-  submenu: []
+  menu_type: 'simple'
 - text: Khoá học
   url: "/portfolios"
+  menu_type: "simple"
 - text: Đăng ký
   url: "/"
   menu_type: "simple"
