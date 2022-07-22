@@ -3,7 +3,6 @@ main_menu:
 - text: Trang chủ
   url: "/"
   menu_type: ''
-  submenu: []
 - text: Phương pháp học
   url: "/"
   menu_type: ''
@@ -69,4 +68,3 @@ main_menu:
     url: "/portfolios/index-8"
 - text: Đăng ký
   url: "/"
-  submenu: []
