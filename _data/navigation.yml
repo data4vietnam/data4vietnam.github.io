@@ -2,11 +2,11 @@
 main_menu:
 - text: Trang chủ
   url: "/"
-  menu_type: megamenu
+  menu_type: ''
   submenu: []
 - text: Phương pháp học
   url: "/"
-  menu_type: dropdown
+  menu_type: ''
   has_submenu: 'true'
   label_two:
   - sub_menu_text: Services
@@ -47,13 +47,7 @@ main_menu:
       url: "/contact/contact-3"
     - text: Contact 04
       url: "/contact/contact-4"
-  submenu:
-  - text: FAQ
-    url: "/faq"
-  - text: 'Page Loading '
-    url: "/loading"
-  - text: Page Scrolling
-    url: "/scroll"
+  submenu: []
 - text: Khoá học
   url: "/portfolios/"
   submenu:
@@ -75,8 +69,4 @@ main_menu:
     url: "/portfolios/index-8"
 - text: Đăng ký
   url: "/"
-  submenu:
-  - text: Blog 01
-    url: "/blogs/index"
-  - text: Blog 02
-    url: "/blogs/index-2"
+  submenu: []
