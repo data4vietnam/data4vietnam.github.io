@@ -454,48 +454,45 @@ faq_area:
   </div>
   </div>
   {% endif %}
-	{% if page.portfolios_area.enable %}
-	<div class="wrapper white-wrapper" id="portfolio">
-	  <div class="container inner">
-	    <div class="row">
-		<div class="col-md-7 mx-auto">
-			    <h2 class="title-color color-gray text-center">{{page.portfolios_area.title}}</h2>
-			    <h3 class="display-3 text-center">{{page.portfolios_area.sub_title}}</h3>
-			    <div class="space40"></div>
-		</div>
-	    </div>
-	    <div class="grid grid-view">
-	      <div class="tiles text-center light-gallery-wrapper">
-		<div class="row isotope">
-		  {% for project in page.portfolios_area.projects %}
-		  <div class="item item-detailed grid-sizer col-md-6 col-lg-4">
-			{% if project.image %}
-		    <figure class="overlay overlay2 rounded mb-20">
-			<a href="{{project.image}}" class="lightbox"> 
-				<img src="{{project.image}}" alt="{{project.title}}"/>
-			</a>
-		    </figure>
-		    {% endif %}
-		    <div class="post-content">
-		      <h2 class="post-title mb-10"><a href="{{project.url}}">{{project.title}}</a></h2>
-		      <div class="meta mb-0">{{project.sub_title}}</div>
-		    </div>
-		  </div>
-		  {% endfor %}
-		</div>
-	      </div>
-	    </div>
-	    <!-- /.grid -->
-	    {% if page.portfolios_area.button_text %}
-	    <div class="space20"></div>
-	    <div class="text-center">
-	      <a href="{{page.portfolios_area.button_url}}" class="btn btn-l btn-default mb-0">{{page.portfolios_area.button_text}}</a>
-	    </div>
-	    {% endif %}
-	  </div>
-	  <!-- /.container -->
-	</div>
-	<!-- /.wrapper -->
+  {% if page.portfolios_area.enable %}
+  <div class="wrapper white-wrapper" id="portfolio">
+    <div class="container inner">
+      <div class="row">
+        <div class="col-md-7 mx-auto">
+          <h2 class="title-color color-gray text-center">{{page.portfolios_area.title}}</h2>
+          <h3 class="display-3 text-center">{{page.portfolios_area.sub_title}}</h3>
+          <div class="space40"></div>
+        </div>
+      </div>
+      <div class="grid grid-view">
+        <div class="tiles text-center light-gallery-wrapper">
+          <div class="row isotope">
+            {% for project in page.portfolios_area.projects %}
+            <div class="item item-detailed grid-sizer col-md-6 col-lg-4">
+              {% if project.image %}
+              <figure class="overlay overlay2 rounded mb-20">
+                <a href="{{project.image}}" class="lightbox"> 
+                  <img src="{{project.image}}" alt="{{project.title}}"/>
+                </a>
+              </figure>
+              {% endif %}
+              <div class="post-content">
+                <h2 class="post-title mb-10"><a href="{{project.url}}">{{project.title}}</a></h2>
+                <div class="meta mb-0">{{project.sub_title}}</div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      <!-- /.grid -->
+      {% if page.portfolios_area.button_text %}
+      <div class="space20"></div>
+      <div class="text-center">
+        <a href="{{page.portfolios_area.button_url}}" class="btn btn-l btn-default mb-0">{{page.portfolios_area.button_text}}</a>
+      </div>
+      {% endif %}
+    </div>
     {% if page.testimonials_area.enable %}
     <div class="wrapper white-wrapper inner">
       <div class="container">
