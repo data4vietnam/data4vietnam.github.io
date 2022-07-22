@@ -48,7 +48,7 @@ main_menu:
       url: "/contact/contact-4"
   submenu: []
 - text: Khoá học
-  url: "/portfolios/"
+  url: "/portfolios"
 - text: Đăng ký
   url: "/"
   has_submenu: 'false'
