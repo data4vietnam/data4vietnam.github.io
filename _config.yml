@@ -1,6 +1,6 @@
 ---
 baseurl: ''
-url: data4vn.com
+url: http://www.data4vn.com/
 permalink: "/:title"
 theme: minima
 plugins:
