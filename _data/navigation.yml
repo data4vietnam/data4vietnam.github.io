@@ -1,14 +1,14 @@
 ---
 main_menu:
 - text: Trang chủ
-  url: "https://www.data4vn.com/#"
+  url: "#"
   menu_type: 'simple'
 - text: Phương pháp học
-  url: "https://www.data4vn.com/#"
+  url: "#"
   menu_type: 'simple'
 - text: Khoá học
-  url: "https://www.data4vn.com/portfolios"
+  url: "portfolios"
   menu_type: "simple"
 - text: Đăng ký
-  url: "https://www.data4vn.com/#"
+  url: "#"
   menu_type: "simple"
