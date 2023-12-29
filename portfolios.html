@@ -114,19 +114,19 @@ portfolios_area:
 <div class="wrapper light-wrapper">
   <div class="container inner">
     <div class="grid grid-view boxed">
-      <div class="isotope-filter text-center">
+<!--       <div class="isotope-filter text-center">
         <ul>
           <li><a class="button active" data-filter="*">All</a></li>
           {% for category in page.portfolios_area.categories %}
            <li><a class="button" data-filter=".{{category.filter}}">{{category.title}}</a></li>
           {% endfor %}
         </ul>
-      </div>
+      </div> -->
       <div class="clearfix"></div>
       <div class="tiles text-center light-gallery-wrapper">
         <div class="row isotope">
           {% for portfolio in  page.portfolios_area.portfolios %}
-          <div class="item grid-sizer col-md-6 col-lg-4 {% for filter in portfolio.filters %} {{filter}} {% endfor %}">
+          <div class="item grid-sizer col-md-6 col-lg-4">
             <div class="box bg-white shadow p-30">
               <figure class="main overlay overlay2 rounded mb-30">
                 <a href="{{portfolio.big_image}}" class="lightbox"> 
