@@ -7,7 +7,7 @@ main_menu:
   url: "#"
   menu_type: 'simple'
 - text: Khoá học
-  url: "shop/index"
+  url: "/shop/index"
   menu_type: "simple"
 - text: Đăng ký
   url: "#"
